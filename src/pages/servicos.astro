@@ -1,8 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
+import HeroServicos from '../components/Servicos/HeroServicos';
+import ComoTrabalhamos from '../components/Servicos/ComoTrabalhamos';
+import ZonaAtuacao from '../components/Servicos/ZonaAtuacao';
+import Certificacoes from '../components/Servicos/Certificacoes';
+import GaleriaTrabalhos from '../components/Servicos/GaleriaTrabalhos';
 ---
 
 <Layout>
-
+    <HeroServicos client:load />
+    <ComoTrabalhamos client:load />
+    <Certificacoes client:load />
+    <ZonaAtuacao client:load />
 </Layout>

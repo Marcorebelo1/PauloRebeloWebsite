@@ -35,7 +35,7 @@ export default function MobileMenu() {
             <a href="/" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition-colors"><FaHome className="text-blue-400" />Início</a>
             <a href="/servicos" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition-colors"><FaPaintBrush className="text-blue-400" />Serviços</a>
             <a href="/portefolio" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition-colors"><FaImages className="text-blue-400" />Portefolio</a>
-            <a href="/quem-somos" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition-colors"><FaUsers className="text-blue-400" />Quem Somos</a>
+            <a href="/quem_somos" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition-colors"><FaUsers className="text-blue-400" />Quem Somos</a>
             <a href="/contacto" className="flex items-center gap-2 px-3 py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold shadow hover:from-cyan-400 hover:to-blue-600 transition-all"><FaEnvelope />Contacto</a>
           </motion.div>
         )}

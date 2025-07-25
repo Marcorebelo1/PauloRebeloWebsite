@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DestaqueProjeto from '../components/Portefolio/DestaqueProjeto';
+import HeroPortefolio from '../components/Portefolio/HeroPortefolio';
+import GaleriaTrabalhos from '../components/Servicos/GaleriaTrabalhos';
+---
+
+<Layout>
+    <HeroPortefolio client:load />
+    
+    <DestaqueProjeto client:load 
+        titulo="Fachada Renovada em Leiria"
+        descricao="Neste projeto, revitalizámos completamente a fachada"
+        imagem="/projetos/fachada-leiria.jpg"
+        altImagem="Projeto de fachada"
+        local="Leiria"
+        duracao="3 dias"
+        tipo="Pintura exterior"
+        tinta="CIN Nováqua HD"
+        imagemDireita={true}
+    />
+
+    <DestaqueProjeto client:load 
+        titulo="Apartamento Moderno em Coimbra"
+        descricao="Transformação completa de um apartamento antigo num espaço moderno e acolhedor, com pintura de interiores e aplicação de tons suaves."
+        imagem="/projetos/apartamento-coimbra.jpg"
+        altImagem="Apartamento renovado em Coimbra"
+        local="Coimbra"
+        duracao="5 dias"
+        tipo="Pintura interior"
+        tinta="Dyrup Superlavável"
+        imagemDireita={false}
+    />
+
+    <DestaqueProjeto client:load 
+        titulo="Moradia Clássica em Aveiro"
+        descricao="Renovação da fachada de uma moradia clássica, preservando detalhes arquitetónicos e utilizando tinta de alta durabilidade."
+        imagem="/projetos/moradia-aveiro.jpg"
+        altImagem="Moradia clássica em Aveiro"
+        local="Aveiro"
+        duracao="4 dias"
+        tipo="Pintura exterior"
+        tinta="Robbialac Rflex"
+        imagemDireita={true}
+    />
+
+    <DestaqueProjeto client:load 
+        titulo="Escritório Empresarial em Lisboa"
+        descricao="Pintura personalizada em escritório empresarial, com cores corporativas e acabamento profissional para um ambiente produtivo."
+        imagem="/projetos/escritorio-lisboa.jpg"
+        altImagem="Escritório em Lisboa"
+        local="Lisboa"
+        duracao="2 dias"
+        tipo="Pintura comercial"
+        tinta="Barbot Acrílica"
+        imagemDireita={false}
+    />
+
+    <GaleriaTrabalhos client:load />
+
+</Layout>
