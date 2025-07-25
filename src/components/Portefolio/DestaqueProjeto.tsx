@@ -25,32 +25,25 @@ export default function DestaqueProjeto({
   imagemDireita = false,
 }: DestaqueProjetoProps) {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-blue-50 to-white">
-      <div
-        className={`max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center ${
-          imagemDireita ? "md:flex-row-reverse" : ""
-        }`}
-        style={imagemDireita ? { direction: "rtl" } : {}}
-      >
-        {/* Imagem do projeto */}
+    <section className="py-16 px-4 bg-gradient-to-b from-blue-50 to-white overflow-x-hidden">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* Imagem */}
         <motion.img
           src={imagem}
           alt={altImagem}
-          className="rounded-xl shadow-xl w-full h-auto object-cover"
+          className={`rounded-xl shadow-xl w-full h-auto object-cover ${imagemDireita ? "md:order-2" : ""}`}
           initial={{ opacity: 0, x: imagemDireita ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
         />
 
-        {/* Conteúdo descritivo */}
+        {/* Texto */}
         <motion.div
+          className={`space-y-6 ${imagemDireita ? "md:order-1" : ""}`}
           initial={{ opacity: 0, x: imagemDireita ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="space-y-6"
-          style={imagemDireita ? { direction: "ltr" } : {}}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-blue-800">
             {titulo}

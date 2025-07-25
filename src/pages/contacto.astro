@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroContactos from '../components/contactos/HeroContactos';
+import ContactosCards from '../components/contactos/ContactosCards';
+import FAQAccordion from '../components/contactos/Faq';
+---
+
+<Layout>
+	<HeroContactos client:load/>
+	<ContactosCards  client:load/>
+	<FAQAccordion client:load/>
+</Layout>

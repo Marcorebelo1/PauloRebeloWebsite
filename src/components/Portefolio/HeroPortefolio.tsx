@@ -11,7 +11,7 @@ export default function HeroPortefolio() {
       <motion.div
         className="relative z-10 text-center px-4 max-w-4xl"
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-md">

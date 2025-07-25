@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroAbout from '../components/quem_somos/HeroAbout';
+import TeamAbout from '../components/quem_somos/TeamAbout';
+import StoryValuesAbout from '../components/quem_somos/StoryValuesAbout';
+import HighlightsAbout from '../components/quem_somos/HighlightsAbout';
+import DifferentialsAbout from '../components/quem_somos/DifferentialsAbout';
+import CTAAbout from '../components/quem_somos/CTAAbout';
+---
+
+<Layout>
+    <HeroAbout client:load/>
+    <StoryValuesAbout client:load/>
+    <TeamAbout client:load/>
+    <HighlightsAbout client:load/>
+    <DifferentialsAbout client:load/>
+    <CTAAbout client:load/>
+</Layout>

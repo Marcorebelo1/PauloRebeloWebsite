@@ -2,15 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Home/Hero';
 import Presentation from '../components/Home/Presentation';
-
+import ReviewsCarousel from '../components/Home/ReviewsCarousel';
+import BrandsStrip from '../components/Home/BrandsStrip';
 ---
 
 <Layout>
 
 	<Presentation client:load />
 	<Hero client:load />
+	<!-- <BrandsStrip client:load /> -->
+	<ReviewsCarousel client:load />
 
-	<div>
-		asdas
-	</div>
 </Layout>
